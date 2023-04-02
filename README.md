@@ -97,3 +97,18 @@ ALTER TABLE data_mahasiswa ADD CONSTRAINT email unique KEY(email);
 14. Hasil akhir
 
 ![bdata 14](https://user-images.githubusercontent.com/115356128/229335067-6f9423e3-aa30-4d59-8326-7fe6d6739f6e.png)
+
+
+# Evaluasi dan pertanyaan
+1. Apa maksud dari int (11)?
+```
+int (11) nunjukkan bahwa kolom memiliki tipe data bilangan bulat (integer) dengan ukuran 11 digit 
+```
+
+2. Ketika kita melihat struktur tabel dengan perintah desc, ada kolom Null yang
+berisi Yes dan No. Apa maksudnya ?
+```
+Jika kolom "Null" adalah "YES", itu berarti kolom tersebut diizinkan untuk memiliki nilai NULL.
+
+Jika kolom "Null" adalah "NO", maka kolom tersebut tidak diizinkan untuk memiliki nilai NULL
+```

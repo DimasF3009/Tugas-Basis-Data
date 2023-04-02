@@ -95,4 +95,5 @@ ALTER TABLE data_mahasiswa ADD CONSTRAINT email unique KEY(email);
 
 
 14. Hasil akhir
+
 ![bdata 14](https://user-images.githubusercontent.com/115356128/229335067-6f9423e3-aa30-4d59-8326-7fe6d6739f6e.png)

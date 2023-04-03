@@ -71,28 +71,28 @@ alter table siswa drop keterangan;
 ```
 alter table siswa rename data_mahasiswa;
 ```
-![bdata 10](https://user-images.githubusercontent.com/115356128/229335046-b7547cd1-98e1-4627-b209-19b33cc21ed4.png)
+![bdatas 10](https://user-images.githubusercontent.com/115356128/229601653-07aabf6a-03d2-4c0d-bc4c-2bb2997c8ac0.png)
 
 
 11. Ganti nama field id menjadi nim!
 ```
 ALTER TABLE data_mahasiswa CHANGE COLUMN id nim varchar(11);
 ```
-![bdata 11](https://user-images.githubusercontent.com/115356128/229335050-1590d861-4af9-4a19-aac0-adb34e40135e.png)
+![bdatas 11](https://user-images.githubusercontent.com/115356128/229602818-8f1dcfc4-8fc6-42af-a378-ce20fdfb9e73.png)
 
 
 12. Jadikan nim sebagai PRIMARY KEY!
 ```
 ALTER TABLE data_mahasiswa ADD PRIMARY KEY(nim);
 ```
-![bdata 12](https://user-images.githubusercontent.com/115356128/229335054-583270b2-e5ad-4ce9-b54a-c6f89f0b44a2.png)
+![bdatas 12](https://user-images.githubusercontent.com/115356128/229603322-447124dd-198f-4a7f-930d-e765c5ef803e.png)
 
 
 13. Jadikan kolom email sebagai UNIQUE KEY
 ```
 ALTER TABLE data_mahasiswa ADD CONSTRAINT email unique KEY(email);
 ```
-![bdata 13](https://user-images.githubusercontent.com/115356128/229335058-3e334837-dd2c-4efa-aab4-62b766f35f06.png)
+![bdatas 13](https://user-images.githubusercontent.com/115356128/229603650-d7cb191a-6229-46a3-af59-af1678a85361.png)
 
 
 14. Hasil akhir

@@ -5,6 +5,7 @@
 CREATE DATABASE latihan1;
 ```
 ![bdata 1](https://user-images.githubusercontent.com/115356128/229334957-bac06184-b49b-4fd3-b0c4-f241e0881d68.png)
+![bdatas 1](https://user-images.githubusercontent.com/115356128/229594312-acff43e8-3d15-43be-a38e-6b16341393c0.png)
 
 
 2. Buat sebuah tabel dengan nama biodata (nama, alamat) didalam
@@ -12,58 +13,58 @@ database latihan1!
 ```
 CREATE TABLE siswa (nama VARCHAR(100), alamat TEXT);
 ```
-![bdata 2](https://user-images.githubusercontent.com/115356128/229334988-a9ac6897-3f66-46ef-a831-d19ce13d1b34.png)
+![bdatas 2](https://user-images.githubusercontent.com/115356128/229595191-3753c350-57ad-47ae-a877-d87314700bc2.png)
 
 
 3. Tambahkan sebuah kolom keterangan (varchar 15), sebagai kolom
 terakhir!
 ```
-ALTER TABLE siswa ADD COLUMN keterangan varchar(15) TEXT AFTER alamat;
+ALTER TABLE siswa ADD COLUMN keterangan varchar(15) AFTER alamat;
 ```
-![bdata 3](https://user-images.githubusercontent.com/115356128/229334996-3b8ed532-96ae-487f-a753-c6bfe61ae9bb.png)
+![bdatas 3](https://user-images.githubusercontent.com/115356128/229597145-eff6bd8e-3036-485a-8773-8aff59a7f55a.png)
 
 
 4. Tambahkan kolom id (int 11) di awal (sebagai kolom pertama)!
 ```
-ALTER TABLE siswa ADD COLUMN id int(11) TEXT First;
+ALTER TABLE siswa ADD COLUMN id int(11) First;
 ```
-![bdata 4](https://user-images.githubusercontent.com/115356128/229335001-339d3972-e0ec-41a1-8b07-419fc6adc5cd.png)
+![bdatas4](https://user-images.githubusercontent.com/115356128/229598116-7598a5c7-a14a-4ff6-b503-039f6d140c1a.png)
 
 
 5. Sisipkan sebuah kolom dengan nama phone (varchar 15) setelah
 kolom alamat!
 ```
-ALTER TABLE siswa ADD COLUMN phone varchar(10) after alamat;
+ALTER TABLE siswa ADD COLUMN phone varchar(15) after alamat;
 ```
-![bdata 5](https://user-images.githubusercontent.com/115356128/229335004-06620cf0-2fc1-4f9c-a69b-0c527071307c.png)
+![bdatas 5](https://user-images.githubusercontent.com/115356128/229598786-4eb06698-c012-4dd3-b0c7-e7c1ddf9c2c0.png)
 
 
 6. Ubah tipe data kolom id menjadi char(11)!
 ```
 ALTER TABLE siswa MODIFY COLUMN id VARCHAR(11);
 ```
-![bdata 6](https://user-images.githubusercontent.com/115356128/229335014-14aa7f4f-87bb-49c1-8cd6-100d4082bca0.png)
+![bdatas 6](https://user-images.githubusercontent.com/115356128/229599451-b87eaf7c-1875-4dd1-b90b-632e43b60803.png)
 
 
 7. Ubah nama kolom phone menjadi hp (varchar 20)!
 ```
 ALTER TABLE siswa CHANGE COLUMN phone hp varchar(20);
 ```
-![bdata 7](https://user-images.githubusercontent.com/115356128/229335021-30d15d7f-64e3-4939-8923-369f1b1e7802.png)
+![bdatas 7](https://user-images.githubusercontent.com/115356128/229600016-7bedd0da-b4a6-47c9-a7ea-ccff74239c21.png)
 
 
 8. Tambahkan kolom email setelah kolom hp
 ```
 ALTER TABLE siswa ADD COLUMN email text after hp;
 ```
-![bdata 8](https://user-images.githubusercontent.com/115356128/229335037-bcf5a062-5d3c-4a25-a586-8b657acc9d7b.png)
+![bdatas 8](https://user-images.githubusercontent.com/115356128/229600459-677b3f99-2f8c-46dc-8c87-d88a4d4e80df.png)
 
 
 9. Hapus kolom keterangan dari tabel!
 ```
 alter table siswa drop keterangan;
 ```
-![bdata 9](https://user-images.githubusercontent.com/115356128/229335044-7a78c3fb-76e4-4c99-bdb7-8d6c4e0e71e0.png)
+![bdatas 9](https://user-images.githubusercontent.com/115356128/229600871-754a8080-c1b6-45c8-ab50-1f703d5fcd7e.png)
 
 
 10. Ganti nama tabel menjadi data_mahasiswa!
